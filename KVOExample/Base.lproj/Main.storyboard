@@ -7,22 +7,21 @@
         <!--KVO Example-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NMy-sW-2lK">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NMy-sW-2lK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b2x-yc-6u1">
-                                        <rect key="frame" x="185.5" y="25" width="230" height="29"/>
+                                        <rect key="frame" x="40" y="25" width="521" height="29"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="230" id="JfC-3N-Xgc"/>
                                             <constraint firstAttribute="height" constant="28" id="ZKC-aZ-LTi"/>
                                         </constraints>
                                         <segments>
@@ -34,8 +33,10 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="b2x-yc-6u1" secondAttribute="centerX" constant="-0.5" id="001-w7-6Rf"/>
+                                    <constraint firstItem="b2x-yc-6u1" firstAttribute="leading" secondItem="NMy-sW-2lK" secondAttribute="leading" constant="40" id="3Zh-cd-bd9"/>
                                     <constraint firstItem="b2x-yc-6u1" firstAttribute="top" secondItem="NMy-sW-2lK" secondAttribute="top" constant="25" id="5Tu-5H-qow"/>
-                                    <constraint firstAttribute="bottom" secondItem="b2x-yc-6u1" secondAttribute="bottom" constant="483" id="BNt-4Q-pXG"/>
+                                    <constraint firstAttribute="bottom" secondItem="b2x-yc-6u1" secondAttribute="bottom" constant="20" id="qs4-bI-8PA"/>
+                                    <constraint firstAttribute="trailing" secondItem="b2x-yc-6u1" secondAttribute="trailing" constant="40" id="wCf-Ud-cZN"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -47,6 +48,7 @@
                             <constraint firstItem="NMy-sW-2lK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Ngg-5w-3eY"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="KVO Example" id="okI-Gb-K7J"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
