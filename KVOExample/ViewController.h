@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Protocols.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <TableDisplayProtocol>
 
 @end
 
